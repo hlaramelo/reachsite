@@ -473,53 +473,107 @@ export const DISTRIBUTORS = [
 ];
 
 export const MEDIA_CONTENT = [
+  // Cartas do Gestor (por Igor Barenboim, Economista-Chefe)
   {
     type: "carta" as const,
-    title: "Carta do Gestor — Fevereiro 2025",
+    title: "Carta do Gestor — Novo cenário geopolítico e comércio global",
     description:
-      "Análise do cenário macroeconômico global e brasileiro, posicionamento dos fundos e perspectivas para os próximos meses.",
-    date: "2025-03-01",
+      "Análise das implicações do novo cenário geopolítico para o comércio global, com foco especial no Brasil e nas novas tarifas impostas pelos EUA.",
+    date: "2025-04-01",
     tag: "Carta do Gestor",
+    url: "https://www.reachcapital.com.br/carta",
   },
   {
     type: "carta" as const,
-    title: "Carta do Gestor — Janeiro 2025",
+    title: "Carta do Gestor — Cenário macroeconômico e desafios",
     description:
-      "Retrospectiva 2024, principais posições e tese de investimento para o novo ano.",
+      "O cenário macroeconômico atual e seus desafios. Ao final, a visão da Gestão para os fundos da Reach.",
+    date: "2025-03-01",
+    tag: "Carta do Gestor",
+    url: "https://www.reachcapital.com.br/carta",
+  },
+  {
+    type: "carta" as const,
+    title: "Carta do Gestor — Um novo momento para a Reach",
+    description:
+      "Chegada de novos sócios e consolidação como gestora multiestratégia: Renda Variável, Multimercado, Renda Fixa e Crédito Privado.",
     date: "2025-02-01",
     tag: "Carta do Gestor",
+    url: "https://www.reachcapital.com.br/carta",
+  },
+  {
+    type: "carta" as const,
+    title: "Carta Trimestral — 4T 2024",
+    description:
+      "Retrospectiva do ano, balanço dos fundos, principais acertos e posicionamento para 2025. Reach FIA: +43,3% em 2024.",
+    date: "2025-01-15",
+    tag: "Carta do Gestor",
+    url: "https://www.reachcapital.com.br/carta",
+  },
+  // Vídeos, podcasts e entrevistas
+  {
+    type: "video" as const,
+    title: "Ricardo Campos na VEJA: Copom pode acelerar cortes nos juros",
+    description:
+      "Diego Gimenes entrevista Ricardo Campos, CEO da Reach Capital, sobre perspectivas de política monetária e os possíveis cortes da Selic.",
+    date: "2024-10-15",
+    tag: "Imprensa",
+    url: "#",
   },
   {
     type: "video" as const,
-    title: "Live: Perspectivas para o 1º Semestre de 2025",
+    title: "Podcast Rio Bravo — A abordagem investigativa da Reach Capital",
     description:
-      "Ricardo Campos e Igor Barenboim discutem cenário macro, oportunidades em ações e renda fixa.",
-    date: "2025-01-20",
-    tag: "Live",
+      "Ricardo Campos fala sobre o método investigativo da Reach, que vai além do RI das empresas para conversar com conselheiros e membros do conselho fiscal.",
+    date: "2024-06-10",
+    tag: "Podcast",
+    url: "https://soundcloud.com/riobravoinvestimentos/podcast-627-ricardo-campos-a-discreta-e-investigativa-abordagem-da-reach-capital",
+  },
+  {
+    type: "video" as const,
+    title: "Reach Capital na Expert XP 2023",
+    description:
+      "Participação da Reach Capital na Expert XP com conteúdo sobre estratégias de investimento e visão de mercado.",
+    date: "2023-08-30",
+    tag: "Evento",
+    url: "#",
+  },
+  // Artigos e imprensa
+  {
+    type: "artigo" as const,
+    title: "Compounders: Ricardo Campos e Igor Barenboim",
+    description:
+      "Perfil dos sócios da Reach Capital — história da fundação da gestora, filosofia de investimento e trajetória desde Hedging-Griffo e Gávea.",
+    date: "2023-04-15",
+    tag: "Artigo",
+    url: "https://clarasodre.substack.com/p/compounders-ricardo-campos-e-igor",
   },
   {
     type: "artigo" as const,
-    title: "Por que investir em Small Caps agora?",
+    title: "Igor Barenboim no Valor: Impacto do crédito no crescimento",
     description:
-      "Análise das oportunidades em empresas de menor capitalização no mercado brasileiro.",
-    date: "2025-01-10",
-    tag: "Artigo",
-  },
-  {
-    type: "video" as const,
-    title: "Reach na Bloomberg: Visão sobre o mercado brasileiro",
-    description:
-      "Entrevista com Ricardo Campos sobre posicionamento da Reach e perspectivas para bolsa.",
-    date: "2024-12-15",
+      "Matéria de capa do Valor Econômico com Igor Barenboim comentando o impacto do crédito nas perspectivas de crescimento econômico.",
+    date: "2024-03-20",
     tag: "Imprensa",
+    url: "#",
   },
   {
-    type: "carta" as const,
-    title: "Carta do Gestor — Dezembro 2024",
+    type: "artigo" as const,
+    title: "Reach entre os 10 melhores fundos Long Biased em 5 anos",
     description:
-      "Balanço anual dos fundos, principais acertos e erros, e posicionamento para 2025.",
-    date: "2024-12-31",
-    tag: "Carta do Gestor",
+      "Ranking destaca Reach Capital entre os 10 melhores fundos Long Biased em janela de 60 meses, período de grandes adversidades para o mercado.",
+    date: "2024-07-01",
+    tag: "Imprensa",
+    url: "#",
+  },
+  {
+    type: "artigo" as const,
+    title: "EXAME: 'Juros baixos criaram a perda fixa', diz gestor",
+    description:
+      "Ricardo Campos fala sobre desmistificar o risco em investimentos e como juros baixos transformaram a renda fixa em 'perda fixa'.",
+    date: "2019-11-20",
+    tag: "Imprensa",
+    url: "https://exame.com/invest/minhas-financas/juros-baixos-criaram-perda-fixa-investidor-precisa-mudar-diz-gestor/",
   },
 ];
 

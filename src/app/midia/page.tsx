@@ -14,6 +14,8 @@ function TagBadge({ tag }: { tag: string }) {
     Live: "bg-red-50 text-red-600",
     Artigo: "bg-lime/10 text-lime-dark",
     Imprensa: "bg-blue-50 text-blue-600",
+    Podcast: "bg-purple-50 text-purple-600",
+    Evento: "bg-amber-50 text-amber-600",
   };
 
   return (
@@ -106,7 +108,12 @@ export default function MidiaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {cartas.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 100}>
-                <div className="group border border-gray-100 rounded-lg p-6 hover:shadow-lg hover:border-lime/30 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group border border-gray-100 rounded-lg p-6 hover:shadow-lg hover:border-lime/30 transition-all duration-300 cursor-pointer h-full flex flex-col"
+                >
                   <div className="flex items-center justify-between mb-4">
                     <TagBadge tag={item.tag} />
                     <div className="text-navy-700/40">
@@ -128,7 +135,7 @@ export default function MidiaPage() {
                       </svg>
                     </span>
                   </div>
-                </div>
+                </a>
               </ScrollReveal>
             ))}
           </div>
@@ -142,7 +149,7 @@ export default function MidiaPage() {
             <div className="flex items-center gap-3 mb-10">
               <div className="w-8 h-px bg-lime" />
               <h2 className="text-2xl md:text-3xl text-navy-900 font-bold">
-                Vídeos & Lives
+                Vídeos, Podcasts & Entrevistas
               </h2>
             </div>
           </ScrollReveal>
@@ -150,7 +157,12 @@ export default function MidiaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {videos.map((item, i) => (
               <ScrollReveal key={item.title} delay={i * 100}>
-                <div className="group bg-white border border-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer">
+                <a
+                  href={item.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group bg-white border border-gray-100 rounded-lg overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer block"
+                >
                   {/* Video placeholder */}
                   <div className="aspect-video bg-navy-900/5 flex items-center justify-center relative">
                     <div className="w-16 h-16 rounded-full bg-lime/20 flex items-center justify-center group-hover:bg-lime/30 transition-colors">
@@ -169,7 +181,7 @@ export default function MidiaPage() {
                     </p>
                     <p className="text-gray-400 text-xs">{formatDate(item.date)}</p>
                   </div>
-                </div>
+                </a>
               </ScrollReveal>
             ))}
           </div>
@@ -192,7 +204,12 @@ export default function MidiaPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {artigos.map((item, i) => (
                 <ScrollReveal key={item.title} delay={i * 100}>
-                  <div className="group border border-gray-100 rounded-lg p-6 hover:shadow-lg hover:border-lime/30 transition-all duration-300 cursor-pointer h-full flex flex-col">
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group border border-gray-100 rounded-lg p-6 hover:shadow-lg hover:border-lime/30 transition-all duration-300 cursor-pointer h-full flex flex-col"
+                  >
                     <div className="flex items-center justify-between mb-4">
                       <TagBadge tag={item.tag} />
                       <div className="text-navy-700/40">
@@ -214,7 +231,7 @@ export default function MidiaPage() {
                         </svg>
                       </span>
                     </div>
-                  </div>
+                  </a>
                 </ScrollReveal>
               ))}
             </div>
