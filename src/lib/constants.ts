@@ -577,5 +577,187 @@ export const MEDIA_CONTENT = [
   },
 ];
 
+// Dados de rentabilidade mensal detalhados (fictícios para demonstração)
+export const FUND_PERFORMANCE: Record<
+  string,
+  { month: string; fund: number; benchmark: number }[]
+> = {
+  "Reach Total Return": [
+    { month: "Jan/24", fund: 2.1, benchmark: 1.3 },
+    { month: "Fev/24", fund: 1.8, benchmark: 0.9 },
+    { month: "Mar/24", fund: -0.5, benchmark: -1.2 },
+    { month: "Abr/24", fund: 3.2, benchmark: 1.8 },
+    { month: "Mai/24", fund: 1.4, benchmark: 0.7 },
+    { month: "Jun/24", fund: 2.8, benchmark: 1.5 },
+    { month: "Jul/24", fund: 4.1, benchmark: 2.3 },
+    { month: "Ago/24", fund: -1.2, benchmark: -0.8 },
+    { month: "Set/24", fund: 3.5, benchmark: 2.1 },
+    { month: "Out/24", fund: 2.7, benchmark: 1.6 },
+    { month: "Nov/24", fund: 1.9, benchmark: 1.1 },
+    { month: "Dez/24", fund: 3.8, benchmark: 2.0 },
+  ],
+  "Reach FIA": [
+    { month: "Jan/24", fund: 3.5, benchmark: 2.8 },
+    { month: "Fev/24", fund: 2.1, benchmark: 1.5 },
+    { month: "Mar/24", fund: -1.8, benchmark: -2.5 },
+    { month: "Abr/24", fund: 5.2, benchmark: 3.9 },
+    { month: "Mai/24", fund: 0.8, benchmark: -0.3 },
+    { month: "Jun/24", fund: 4.1, benchmark: 3.2 },
+    { month: "Jul/24", fund: 6.3, benchmark: 4.8 },
+    { month: "Ago/24", fund: -2.5, benchmark: -3.1 },
+    { month: "Set/24", fund: 4.7, benchmark: 3.5 },
+    { month: "Out/24", fund: 3.2, benchmark: 2.4 },
+    { month: "Nov/24", fund: 2.8, benchmark: 1.9 },
+    { month: "Dez/24", fund: 5.9, benchmark: 4.1 },
+  ],
+  "Reach Small Caps": [
+    { month: "Jan/24", fund: 0.0, benchmark: 2.8 },
+    { month: "Fev/24", fund: 0.0, benchmark: 1.5 },
+    { month: "Mar/24", fund: 0.0, benchmark: -2.5 },
+    { month: "Abr/24", fund: 4.8, benchmark: 3.9 },
+    { month: "Mai/24", fund: 2.1, benchmark: -0.3 },
+    { month: "Jun/24", fund: 5.6, benchmark: 3.2 },
+    { month: "Jul/24", fund: 7.2, benchmark: 4.8 },
+    { month: "Ago/24", fund: -1.8, benchmark: -3.1 },
+    { month: "Set/24", fund: 6.1, benchmark: 3.5 },
+    { month: "Out/24", fund: 4.3, benchmark: 2.4 },
+    { month: "Nov/24", fund: 3.5, benchmark: 1.9 },
+    { month: "Dez/24", fund: 6.8, benchmark: 4.1 },
+  ],
+  "Reach Global": [
+    { month: "Jan/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Fev/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Mar/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Abr/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Mai/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Jun/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Jul/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Ago/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Set/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Out/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Nov/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Dez/24", fund: 16.2, benchmark: 11.7 },
+  ],
+  "Reach Inflação Ativa": [
+    { month: "Jan/24", fund: 1.1, benchmark: 0.8 },
+    { month: "Fev/24", fund: 0.9, benchmark: 0.7 },
+    { month: "Mar/24", fund: 1.3, benchmark: 1.0 },
+    { month: "Abr/24", fund: 1.0, benchmark: 0.8 },
+    { month: "Mai/24", fund: 1.2, benchmark: 0.9 },
+    { month: "Jun/24", fund: 0.8, benchmark: 0.6 },
+    { month: "Jul/24", fund: 1.4, benchmark: 1.1 },
+    { month: "Ago/24", fund: 1.1, benchmark: 0.9 },
+    { month: "Set/24", fund: 1.3, benchmark: 1.0 },
+    { month: "Out/24", fund: 1.0, benchmark: 0.8 },
+    { month: "Nov/24", fund: 0.9, benchmark: 0.7 },
+    { month: "Dez/24", fund: 1.3, benchmark: 1.0 },
+  ],
+  "Reach Crédito High Grade": [
+    { month: "Jan/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Fev/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Mar/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Abr/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Mai/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Jun/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Jul/24", fund: 1.05, benchmark: 1.0 },
+    { month: "Ago/24", fund: 1.08, benchmark: 1.0 },
+    { month: "Set/24", fund: 1.03, benchmark: 1.0 },
+    { month: "Out/24", fund: 1.06, benchmark: 1.0 },
+    { month: "Nov/24", fund: 1.04, benchmark: 1.0 },
+    { month: "Dez/24", fund: 1.07, benchmark: 1.0 },
+  ],
+  "Reach Crédito Estruturado": [
+    { month: "Jan/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Fev/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Mar/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Abr/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Mai/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Jun/24", fund: 0.0, benchmark: 0.0 },
+    { month: "Jul/24", fund: 1.12, benchmark: 1.0 },
+    { month: "Ago/24", fund: 1.15, benchmark: 1.0 },
+    { month: "Set/24", fund: 1.10, benchmark: 1.0 },
+    { month: "Out/24", fund: 1.14, benchmark: 1.0 },
+    { month: "Nov/24", fund: 1.11, benchmark: 1.0 },
+    { month: "Dez/24", fund: 1.16, benchmark: 1.0 },
+  ],
+};
+
+// Conteúdo expandido de mídia
+export const MEDIA_CONTENT_EXTENDED = [
+  ...MEDIA_CONTENT,
+  {
+    type: "carta" as const,
+    title: "Carta do Gestor — Perspectivas 2024",
+    description:
+      "Análise do cenário para 2024: expectativas de cortes de juros, eleições americanas e oportunidades em renda variável.",
+    date: "2024-01-10",
+    tag: "Carta do Gestor",
+    url: "https://www.reachcapital.com.br/carta",
+  },
+  {
+    type: "carta" as const,
+    title: "Carta do Gestor — Balanço do 3T 2024",
+    description:
+      "Resultados do terceiro trimestre, posicionamento em ações e perspectivas para o fim do ano.",
+    date: "2024-10-01",
+    tag: "Carta do Gestor",
+    url: "https://www.reachcapital.com.br/carta",
+  },
+  {
+    type: "video" as const,
+    title: "Live: Cenário Macro Brasil — Outubro 2024",
+    description:
+      "Igor Barenboim analisa ao vivo o cenário macroeconômico brasileiro e os impactos na gestão dos fundos.",
+    date: "2024-10-20",
+    tag: "Live",
+    url: "#",
+  },
+  {
+    type: "video" as const,
+    title: "Ricardo Campos no InfoMoney — Ações brasileiras",
+    description:
+      "Entrevista sobre as melhores oportunidades em ações brasileiras para o segundo semestre de 2024.",
+    date: "2024-07-15",
+    tag: "Imprensa",
+    url: "#",
+  },
+  {
+    type: "artigo" as const,
+    title: "Bloomberg Línea: Reach Capital amplia equipe de crédito",
+    description:
+      "Matéria sobre a expansão da Reach Capital para crédito privado com a chegada de Pedro Breviglieri.",
+    date: "2025-01-20",
+    tag: "Imprensa",
+    url: "#",
+  },
+  {
+    type: "artigo" as const,
+    title: "Pipeline Valor: Reach lança fundo de ações internacionais",
+    description:
+      "Cobertura do lançamento do Reach Global, fundo de ações listadas nas principais bolsas do mundo.",
+    date: "2025-02-15",
+    tag: "Imprensa",
+    url: "#",
+  },
+  {
+    type: "video" as const,
+    title: "Podcast Stock Pickers — Ricardo Campos",
+    description:
+      "Ricardo compartilha as teses de investimento da Reach e discute as principais posições do portfólio.",
+    date: "2024-04-10",
+    tag: "Podcast",
+    url: "#",
+  },
+  {
+    type: "artigo" as const,
+    title: "Valor Investe: Melhores fundos de ações do 1S 2024",
+    description:
+      "Reach FIA aparece entre os destaques de rentabilidade no primeiro semestre de 2024.",
+    date: "2024-07-05",
+    tag: "Imprensa",
+    url: "#",
+  },
+];
+
 export const DISCLAIMER =
   "Rentabilidade passada não representa garantia de resultados futuros. A rentabilidade divulgada não é líquida de impostos. Fundos de investimento não contam com garantia do administrador, do gestor, de qualquer mecanismo de seguro ou Fundo Garantidor de Crédito – FGC. Leia o prospecto e o regulamento antes de investir. A Reach Capital Investimentos não comercializa nem distribui cotas de fundos de investimento. As informações contidas neste site são de caráter meramente informativo e não constituem qualquer tipo de aconselhamento de investimentos.";
