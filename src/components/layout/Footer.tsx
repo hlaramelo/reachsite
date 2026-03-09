@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { COMPANY, NAV_LINKS, DISCLAIMER, DISTRIBUTORS } from "@/lib/constants";
+import Logo from "@/components/ui/Logo";
 
 export default function Footer() {
   return (
@@ -7,13 +8,8 @@ export default function Footer() {
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           <div>
-            <div className="flex items-center mb-4">
-              <svg className="w-6 h-6 text-lime mr-2" viewBox="0 0 32 32" fill="currentColor">
-                <path d="M16 4L2 28h28L16 4zm0 6l8.5 16h-17L16 10z" />
-              </svg>
-              <span className="font-semibold text-lg tracking-[0.15em]">
-                REACH
-              </span>
+            <div className="mb-4">
+              <Logo size="sm" color="white" />
             </div>
             <p className="text-white/50 text-sm leading-relaxed">
               {COMPANY.tagline}

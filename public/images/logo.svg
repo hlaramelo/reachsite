@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40" fill="none">
-  <text x="0" y="30" font-family="Georgia, serif" font-size="28" font-weight="700" fill="currentColor" letter-spacing="3">REACH</text>
-  <text x="118" y="30" font-family="Georgia, serif" font-size="28" font-weight="300" fill="currentColor" letter-spacing="3">CAPITAL</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 48" fill="none">
+  <!-- Mountain symbol -->
+  <path d="M6 38L18 10L24 22L30 10L42 38H6Z" fill="currentColor" opacity="0.9"/>
+  <path d="M18 10L24 22L30 10L24 2L18 10Z" fill="currentColor"/>
+  <!-- Snow cap accent -->
+  <path d="M21 14L24 8L27 14L24 18L21 14Z" fill="white" opacity="0.3"/>
+  <!-- Wordmark -->
+  <text x="54" y="32" font-family="Montserrat, system-ui, sans-serif" font-size="26" font-weight="700" letter-spacing="6" fill="currentColor">REACH</text>
 </svg>

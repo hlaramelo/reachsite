@@ -13,6 +13,7 @@ export const COMPANY = {
   cep: "01451-010",
   email: "comercial@reachcapital.com.br",
   phone: "+55 11 2348-0100",
+  whatsapp: "551123480100",
   social: {
     linkedin: "https://linkedin.com/company/reachcapital",
     instagram: "https://www.instagram.com/reachasset/",
@@ -25,6 +26,7 @@ export const NAV_LINKS = [
   { label: "Estratégias", href: "/estrategias" },
   { label: "Processo", href: "/processo" },
   { label: "Equipe", href: "/equipe" },
+  { label: "Mídia", href: "/midia" },
   { label: "Contato", href: "/contato" },
 ];
 
@@ -468,6 +470,57 @@ export const DISTRIBUTORS = [
   "Toro (Santander)",
   "Warren",
   "Andbank",
+];
+
+export const MEDIA_CONTENT = [
+  {
+    type: "carta" as const,
+    title: "Carta do Gestor — Fevereiro 2025",
+    description:
+      "Análise do cenário macroeconômico global e brasileiro, posicionamento dos fundos e perspectivas para os próximos meses.",
+    date: "2025-03-01",
+    tag: "Carta do Gestor",
+  },
+  {
+    type: "carta" as const,
+    title: "Carta do Gestor — Janeiro 2025",
+    description:
+      "Retrospectiva 2024, principais posições e tese de investimento para o novo ano.",
+    date: "2025-02-01",
+    tag: "Carta do Gestor",
+  },
+  {
+    type: "video" as const,
+    title: "Live: Perspectivas para o 1º Semestre de 2025",
+    description:
+      "Ricardo Campos e Igor Barenboim discutem cenário macro, oportunidades em ações e renda fixa.",
+    date: "2025-01-20",
+    tag: "Live",
+  },
+  {
+    type: "artigo" as const,
+    title: "Por que investir em Small Caps agora?",
+    description:
+      "Análise das oportunidades em empresas de menor capitalização no mercado brasileiro.",
+    date: "2025-01-10",
+    tag: "Artigo",
+  },
+  {
+    type: "video" as const,
+    title: "Reach na Bloomberg: Visão sobre o mercado brasileiro",
+    description:
+      "Entrevista com Ricardo Campos sobre posicionamento da Reach e perspectivas para bolsa.",
+    date: "2024-12-15",
+    tag: "Imprensa",
+  },
+  {
+    type: "carta" as const,
+    title: "Carta do Gestor — Dezembro 2024",
+    description:
+      "Balanço anual dos fundos, principais acertos e erros, e posicionamento para 2025.",
+    date: "2024-12-31",
+    tag: "Carta do Gestor",
+  },
 ];
 
 export const DISCLAIMER =

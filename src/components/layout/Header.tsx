@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { NAV_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/ui/Logo";
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -36,12 +37,7 @@ export default function Header() {
     >
       <nav className="container-custom flex items-center justify-between h-20">
         <Link href="/" className="flex items-center">
-          <svg className="w-8 h-8 text-lime mr-3" viewBox="0 0 32 32" fill="currentColor">
-            <path d="M16 4L2 28h28L16 4zm0 6l8.5 16h-17L16 10z" />
-          </svg>
-          <span className="text-white font-semibold text-lg tracking-[0.15em]">
-            REACH
-          </span>
+          <Logo size="sm" color="white" />
         </Link>
 
         <div className="hidden lg:flex items-center gap-8">
